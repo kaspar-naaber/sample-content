@@ -1,1 +1,1 @@
-#Sample content for testing rich text content areas
+##Sample content for testing and styling rich text content areas
