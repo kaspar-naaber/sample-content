@@ -1,6 +1,6 @@
 <h1>Good sample content</h1>
 <p>Web content can make or break a website – no matter how good the design is. Most designers know this from first-hand experience.</p>
-<p>So it wasn’t surprising when WDD visitors who read <a href="http://www.neti.ee">How to spot and avoid web copy that kills websites</a>demanded a follow-up showcasing good web content.</p>
+<p>So it wasn’t surprising when WDD visitors who read <a href="http://www.neti.ee">How to spot and avoid web copy that kills websites</a> demanded a follow-up showcasing good web content.</p>
 <p>Whether you or your clients write content for your websites, or you partner with content writers (aka web writers, copywriters, SEO copywriters, etc.), the content needs to attract visitors, engage them, and ultimately entice them to take desired actions. Only then do you truly attain a winning website.</p>
 <p>Here are good web content examples, and what makes them work.</p>
 
@@ -17,10 +17,10 @@
 
 <h3>Added images can be larger than the content area</h3>
 <p>If the original image is wider than the content area it should be scaled down to the maximum width of the container.</p>
-<img src="http://placeimg.com/1000/500/any" title="This image's original is wider than its container" alt="There should be a random image here">
+<img alt="There should be a random image here" src="http://placeimg.com/1000/500/any">
 <p>You can change the width and height of this random image by changing the valuses in the URL.</p>
 <p>On the other hand an image can be smaller than the contact area. In this case the image should not scale itself before the content area shrinks down to the point where it is narrower than the original image.</p>
-<img src="http://placeimg.com/480/320/any" title="This image's original is narrower than its container" alt="There should be a random image here">
+<img alt="There should be a random image here" src="http://placeimg.com/480/320/any">
 <p>You can change the width and height of this random image by changing the valuses in the URL.</p>
 
 <h3>More headings</h3>
@@ -48,58 +48,90 @@
 </ol>
 
 <h5>Don't forget the description list</h5>
+
 <dl>
   <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
+  <dd>- black hot drink</dd>
   <dt>Milk</dt>
-  <dd>White cold drink</dd>
+  <dd>- white cold drink</dd>
 </dl>
 
 <h6>Text might be something else than a paragraph</h6>
-<span>For <a href="http://www.neti.ee">example</a> this text is wrapped inside a &lt;span&gt; element.</span>
+For <a href="http://www.neti.ee">example</a> this text is wrapped inside a &lt;span&gt; element.
 While <a href="http://www.neti.ee">this</a> one is not wrapped at all.
 Editors might break a line<br>
 from a random place in the text.
-<div>They can also <a href="http://www.neti.ee">wrap</a> the text inside the &lt;div&gt; element like this text right here.</div>
+They can also <a href="http://www.neti.ee">wrap</a> the text inside the &lt;div&gt; element like this text right here.
 
 <h2>Don't forget the tables</h2>
-<table width="100%">
+<table>
   <tbody>
     <tr>
       <td>Ingedient</td>
       <td>Amount</td>
       <td>Fat</td>
       <td>Calories</td>
+      <td>Rating</td>
+      <td>Consumers</td>
+      <td>Available</td>
     </tr>
     <tr>
       <td>Penne Pasta</td>
       <td>200g</td>
       <td>1.6 g</td>
       <td>390</td>
+      <td>5.6</td>
+      <td>3</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td>Fresh tomatoes</td>
       <td>2</td>
       <td>0 g</td>
       <td>152</td>
+      <td>152</td>
+      <td>152</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td>Goat cheese</td>
       <td>1 cup</td>
       <td>14.9 g</td>
       <td>414</td>
+      <td>10</td>
+      <td>100</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Heave cream</td>
       <td>200ml</td>
       <td>71 g</td>
       <td>842</td>
+      <td>99.4</td>
+      <td>50</td>
+      <td>Unknown</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Smaller table</h3>
+<table>
+  <tbody>
+    <tr>
+      <td>Monday</td>
+      <td>Tuesday</td>
+      <td>Wednesday</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>Friday<br></td>
+      <td>Saturday</td>
     </tr>
   </tbody>
 </table>
 
 <h2>Google maps</h2>
-<iframe src="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=Paris@48.856614,2.3522219&amp;ie=UTF8&amp;ll=48.856614,2.3522219&amp;z=12&amp;iwloc=A&amp;output=embed" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+<iframe src="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=Paris@48.856614,2.3522219&amp;ie=UTF8&amp;ll=48.856614,2.3522219&amp;z=12&amp;iwloc=A&amp;output=embed" width="100%" height="300" frameborder="0"></iframe>
 
 <h2>"Weird" characters </h2>
 <p>What happens if a person wants to write in some "weird" language that uses unusual characters? For example in Russian on Latvian. These characters should be included in the custom webfont aswell.</p>
@@ -112,58 +144,50 @@ from a random place in the text.
 <p>Some people might want to show some example code in their articles. There are two ways to insert code examples.</p>
 <h3>Preformatted text</h3>
 <p>One mehtod is using the &lt;pre&gt; tag.</p>
-<pre>
-  $(document).ready(function() {
-  $('a').click(function(event) {
-  alert('As you can see, the link no longer took you to jquery.com');
-  event.preventDefault();
-});
-});
-</pre>
+<pre>$(document).ready(function() {<br>&nbsp; $('a').click(function(event) {<br>&nbsp; &nbsp; alert('As you can see, the link no longer took you to jquery.com');<br>&nbsp; &nbsp; event.preventDefault();<br>&nbsp; });<br>});</pre>
 
 <h3>Code element</h3>
 <p>Code can be also wrapped inside the &lt;code&gt; element</p>
-<code>
-  $(document).ready(function() {
-  $('#cool-element').click(function(event) {
-  console.log('The coolest element ever');
-});
-});
-</code>
+<pre>
+  <code>$(document).ready(function() {<br>&nbsp; $('#cool-element').click(function(event) {<br>&nbsp; &nbsp; console.log('The coolest element ever');<br>&nbsp; });<br>});</code>
+</pre>
+
+<p>Code can also be inline with the text. <code>This block here</code> for example.</p>
 
 <h2>Embedding videos</h2>
 <p>Now we are going to try different methods to embed a video.</p>
+
 <h3>Youtube</h3>
 <h4>Using the E3 UI</h4>
-<p>This is the output of a video that is added using the E3 UI</p>
-<div class="edy-texteditor-container wysihtml5-uneditable-container embed-container draggable-container edy-texteditor-container-active" unselectable="on"><div class="edy-padding-resizer-wrapper" style="padding-bottom: 66.66666666666667%;"><iframe src="http://www.youtube.com/embed/0vrdgDdPApQ?wmode=transparent&amp;jqoemcache=CtGs2" allowfullscreen="true" allowscriptaccess="always" scrolling="no" frameborder="0"></iframe></div></div>
+<p>This is the output of a video that is added using the E3 UI (text content area)</p>
+<div class="edy-texteditor-container embed-container draggable-container" unselectable="on" style="max-width: 100%; overflow: hidden; position: relative;">
+  <div class="edy-padding-resizer-wrapper" style="padding-bottom: 82.11764705882354%;">
+    <iframe src="http://www.youtube.com/embed/aLihWxLjLGo?wmode=transparent&amp;jqoemcache=PHT0X" allowfullscreen="true" allowscriptaccess="always" scrolling="no" frameborder="0" style="position: absolute; display: block; width: 100%; height: 100%;"></iframe>
+  </div>
+</div>
 
-<h4>Copy/paste link from Youtube</h4>
-<p>This uses HTML5</p>
-<iframe width="560" height="315" src="//www.youtube.com/embed/0vrdgDdPApQ" frameborder="0" allowfullscreen></iframe>
+<p>This is the output of a video that is added using the E3 UI (movie content area)</p>
+<iframe src="http://www.youtube.com/embed/aLihWxLjLGo?wmode=transparent&amp;jqoemcache=aKeps" width="425" height="349" allowfullscreen="true" allowscriptaccess="always" scrolling="no" frameborder="0" style="width: 924px; height: 758.697247706422px;"></iframe>
 
-<h4>Copy/paste link from Youtube using the old-school code</h4>
-<p>This uses Flash</p>
-<object width="560" height="315"><param name="movie" value="//www.youtube.com/v/0vrdgDdPApQ?hl=et_EE&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/0vrdgDdPApQ?hl=et_EE&amp;version=3" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<h4>Copy/paste embed link from Youtube</h4>
+<iframe width="560" height="315" src="//www.youtube.com/embed/aLihWxLjLGo" frameborder="0" allowfullscreen></iframe>
 
 <h3>Vimeo</h3>
-<h4>Using the E3 UI</h4>
-<div class="edy-texteditor-container wysihtml5-uneditable-container embed-container draggable-container edy-texteditor-container-active" unselectable="on"><div class="edy-padding-resizer-wrapper" style="padding-bottom: 56.25%;"><iframe src="//player.vimeo.com/video/76843270" frameborder="0" title="Miami Fixed Gear Sample Video" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div></div>
+<h4>Using the E3 UI (text content area)</h4>
+<div class="edy-texteditor-container embed-container draggable-container" unselectable="on" style="max-width: 100%; overflow: hidden; position: relative;"><div class="edy-padding-resizer-wrapper" style="padding-bottom: 56.25%;"><iframe src="//player.vimeo.com/video/76843270" frameborder="0" title="Miami Fixed Gear Sample Video" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; display: block; width: 100%; height: 100%;"></iframe></div></div>
 
-<h4>Copy/paste link from Vimeo</h4>
-<p>This uses HTML5</p>
+<h4>Using the E3 UI (movie content area)</h4>
+<iframe src="//player.vimeo.com/video/76843270" width="1280" height="720" frameborder="0" title="Miami Fixed Gear Sample Video" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="width: 924px; height: 720px;"></iframe>
+
+<h4>Copy/paste embed link from Vimeo</h4>
 <iframe src="//player.vimeo.com/video/76843270" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/76843270">Miami Fixed Gear Sample Video</a> from <a href="http://vimeo.com/rigodiscuafilms">Rigo Discua</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-<h4>Copy/paste link from Vimeo using the old-school code</h4>
-<p>This uses Flash</p>
-<object width="500" height="281"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=76843270&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=76843270&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="281"></embed></object> <p><a href="http://vimeo.com/76843270">Miami Fixed Gear Sample Video</a> from <a href="http://vimeo.com/rigodiscuafilms">Rigo Discua</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 <h1>Some <b>people</b> might use the <strong>main</strong> heading again</h1>
 <h2><i>Italic</i>, <em>italic</em>, <b>bold</b> or <strong>strong</strong></h2>
 <p>A text can be <i>italic</i>, <em>emphasized</em>, <b>bold</b> or <strong>strong</strong>.</p>
 <p>In some casese they can be <b><i>bold and italic</i></b> or <strong><em>strong and emphasized</em></strong> at the same time.</p>
-<p>Almost forgot the <u>underlined text</u>. Some text can also containt the <sup>superscript</sup> or the <sub>subscript</sub>.</p>
-<p>If you are crazy enough you can also use weird elements like <blink>blink</blink> or <mark>mark</mark>.</p>
+<p>Almost forgot the <u>underlined text</u>. Some text can also containt the superscript or the subscript.</p>
+<p>If you are crazy enough you can also use weird elements like blink or mark.</p>
 
 <h2>This is how the <u>underlined</u> word will look like in a heading</h2>
 
@@ -229,4 +253,4 @@ from a random place in the text.
 <p>There are also some words that might be very long. For example "PNEUMONO­ULTRA­MICRO­SCOPIC­SILICO­VOLCANO­CONIOSIS"</p>
 Let's see what happens if we don't wrap it in the &lt;p&gt;: "PNEUMONO­ULTRA­MICRO­SCOPIC­SILICO­VOLCANO­CONIOSIS"
 Or if we use a line break<br>in a "PNEUMONO­ULTRA­MICRO­SCOPIC­SILICO­VOLCANO­CONIOSIS" random place.
-<div>Like I said before "PNEUMONO­ULTRA­MICRO­SCOPIC­SILICO­VOLCANO­CONIOSIS" can be inside a &lt;div&gt; aswell.</div>
+Like I said before "PNEUMONO­ULTRA­MICRO­SCOPIC­SILICO­VOLCANO­CONIOSIS" can be inside a &lt;div&gt; aswell.
