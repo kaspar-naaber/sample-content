@@ -144,15 +144,32 @@ They can also <a href="http://www.neti.ee">wrap</a> the text inside the &lt;div&
 <p>Some people might want to show some example code in their articles. There are two ways to insert code examples.</p>
 <h3>Preformatted text</h3>
 <p>One mehtod is using the &lt;pre&gt; tag.</p>
-<pre>$(document).ready(function() {<br>&nbsp; $('a').click(function(event) {<br>&nbsp; &nbsp; alert('As you can see, the link no longer took you to jquery.com');<br>&nbsp; &nbsp; event.preventDefault();<br>&nbsp; });<br>});</pre>
+<pre>
+$(document).ready(function() {
+  $('a').click(function(event) {
+    alert('As you can see, the link no longer took you to jquery.com');
+    event.preventDefault();
+  });
+});
+</pre>
 
 <h3>Code element</h3>
 <p>Code can be also wrapped inside the &lt;code&gt; element</p>
 <pre>
-  <code>$(document).ready(function() {<br>&nbsp; $('#cool-element').click(function(event) {<br>&nbsp; &nbsp; console.log('The coolest element ever');<br>&nbsp; });<br>});</code>
+<code>
+$(document).ready(function() {
+  $('#cool-element').click(function(event) {
+    console.log('The coolest element ever');
+  });
+});
+</code>
 </pre>
 
-<p>Code can also be inline with the text. <code>This block here</code> for example.</p>
+<p>Code can also be inline with the text. For example this block here <code>console.log('The coolest element ever');</code> is an inline code example.</p>
+
+<p>What happens if the <code>code-block is longer than the normal code example this one here shows it</code></p>
+
+<p>What happens if the code-block has long words in it andn eeds to be wrapped <code>$(document).ready(function(somethingreallylong) {</code></p>
 
 <h2>Embedding videos</h2>
 <p>Now we are going to try different methods to embed a video.</p>
