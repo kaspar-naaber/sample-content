@@ -10,7 +10,7 @@ For example:
     font-size: 24px;
     color: red;
   }
-  
+
   .content-area p {
     font-size: 16px;
     color: green;
